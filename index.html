@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversário, Tchuco Tchuco ❤️</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #0d0d0d;
+            color: #fff;
+            overflow-x: hidden
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: radial-gradient(circle, #1a1a1a, #000);
+            padding: 20px
+        }
+
+        h1 {
+            color: #ff2d2d;
+            font-size: 2.5em
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px;
+            background: #d60000;
+            color: #fff;
+            font-size: 16px
+        }
+
+        .section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto
+        }
+
+        .gallery {
+            display: flex;
+            overflow-x: auto;
+            overflow-y: hidden;
+            gap: 10px
+            
+        }
+
+        .gallery::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .gallery::-webkit-scrollbar-thumb {
+            background: #ff2d2d;
+            border-radius: 4px;
+        }
+
+        .card {
+            min-width: 250px;
+            background: #1a1a1a;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: .3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px
+        }
+
+        .carta {
+            white-space: pre-line;
+            background: #111;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #ff2d2d
+        }
+
+        .hidden {
+            display: none
+        }
+
+        .background-img {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: url('./assets/spiderman-bg.jpg') no-repeat center center/cover;
+            opacity: 0.3;
+            z-index: -1
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="background-img"></div>
+
+    <div class="hero" id="hero">
+        <h1>🕷️ Ei, Tchuco Tchuco...</h1>
+        <p>Seu sentido aranha detectou uma mensagem especial ❤️</p>
+        <button onclick="start()">Abrir Surpresa 🎁</button>
+    </div>
+
+    <div id="content" class="hidden">
+
+        <div class="section">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7iL6o9tox1zgHpKUfh9vuC?autoplay=1" width="100%" height="80"></iframe>
+        </div>
+
+        <div class="section">
+            <h2>💌 Mensagem</h2>
+            <div class="carta" id="carta"></div>
+        </div>
+
+        <div class="section">
+            <h2>📸 Nossos Momentos</h2>
+            <div class="gallery">
+                <div class="card"><img src="./assets/img1.jpg">
+                    <p>Se o Woody e o Buzz fossem amigos assim, o mundo seria perfeito.</p>
+                </div>
+                <div class="card"><img src="./assets/img2.jpg">
+                    <p>Sentindo a brisa e a vibe de Queens. A vida lá fora também pede uma pausa.</p>
+                </div>
+                <div class="card"><img src="./assets/img3.jpg">
+                    <p>Na fila do cinema esperando o próximo blockbuster. Quem é o herói? Ela, claro.</p>
+                </div>
+                <div class="card"><img src="./assets/img4.jpg">
+                    <p>Meu maior super poder é ter essa amizade que nem o Venom consegue separar.</p>
+                </div>
+                <div class="card"><img src="./assets/img5.jpg">
+                    <p>Com grandes poderes vêm grandes responsabilidades... e selfies incríveis.</p>
+                </div>
+                <div class="card"><img src="./assets/img6.jpg">
+                    <p>O sorriso que ilumina a codade. Você é a verdaeira "Amiga da Vizinhança".</p>
+                </div>
+                <div class="card"><img src="./assets/img7.jpg">
+                    <p>Aqui ninguém precisa de capa. Só de cobertor, amigos e uma boa risada.</p>
+                </div>
+                <div class="card"><img src="./assets/img8.jpg">
+                    <p>O dia foi uma maratona de herói, mas o sofá é meu ponto de apoio.</p>
+                </div>
+                <div class="card"><img src="./assets/img9.jpg">
+                    <p>Identidade secreta revelada: uma pessoa incrível.</p>
+                </div>
+                <div class="card"><img src="./assets/img10.jpg">
+                    <p>Tá na cara que o lema é: viver a vida com amor e estilo.</p>
+                </div>
+                <div class="card"><img src="./assets/img11.jpg">
+                    <p>Sede de amizade. Onde a Aranha deixa a máscara de lado e só curte a turma.</p>
+                </div>
+                <div class="card"><img src="./assets/img12.jpg">
+                    <p>Na missão: confirmar que os laços da amizade são mais fortes que a teia de aranha.</p>
+                </div>
+                <div class="card"><img src="./assets/img13.jpg">
+                    <p>Modo "Homem-Aranha desancansando no teto" ativado. Merecido.</p>
+                </div>
+                <div class="card"><img src="./assets/img14.jpg">
+                    <p>Recarregando as energias para salvar o mundo (ou só matar a fome mesmo).</p>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </div>
+
+    <script>
+
+        function start() {
+            document.getElementById("hero").style.display = "none";
+            document.getElementById("content").classList.remove("hidden");
+            typeWriter();
+        }
+
+        const text = `Feliz aniversário, Isa. ❤️
+
+Ou melhor... Tchuco Tchuco, coisa mais linda da mãe.
+
+Eu fiquei pensando muito em como escrever isso...
+
+Você é muito especial para mim. Eu te amo de verdade.
+
+Obrigado por tudo.`;
+
+        let i = 0;
+        function typeWriter() {
+            if (i < text.length) {
+                document.getElementById("carta").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 20);
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
